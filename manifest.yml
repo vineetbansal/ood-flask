@@ -1,0 +1,7 @@
+---
+name: Flask 
+category: Interactive Apps
+subcategory: Servers
+role: batch_connect
+description: |
+    This app runs Flask as a blocking web process inside OnDemand

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# For now, use the tensorboard-server module that also has flask installed in it
+module load tensorboard-server
+
+# Launch the Flask Server
+python /home/SHARED/ondemandflask/app.py 0.0.0.0 ${app_port} <%= context.greeting %>
