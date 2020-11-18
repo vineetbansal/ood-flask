@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     DEBUG = False
     if DEBUG:
-        app.wsgi_app = DebuggedApplication(wsgi_app, evalex=True)
+        app.wsgi_app = DebuggedApplication(app.wsgi_app, evalex=True)
 
     host, port, greeting = sys.argv[1:]
     app.run(debug=DEBUG, host=host, port=int(port))
