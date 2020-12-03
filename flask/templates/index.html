@@ -1,4 +1,13 @@
 <h2>Welcome</h2>
 
-<p>{{message}}</p>
+<p>Please run the following commands for your account before trying this app:</p>
+<p><pre><ul><li>mkdir -p ~/RESULTS</li><li>chcon -R -t ood_apps_t ~/RESULTS</li></ul></pre></p>
+<p>Results/Plots will be placed in the RESULTS folder of your home directory.</p>
+
+{% block main %}
+
+<p>The following link will launch a sample Parflow Single Column CLM workflow as a blocking call. (~40 seconds)</p>
+<p><a href="/rnode/{{host}}/{{port}}{{ url_for('parflow') }}">Run Parflow CLM</a></p>
+
+{% endblock %}
 
